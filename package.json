@@ -1,8 +1,7 @@
 {
   "name": "tailadmin-react",
   "private": true,
-  "version": "2.0.2",
-  "type": "module",
+  "version": "2.1.0",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -21,6 +20,8 @@
     "apexcharts": "^4.1.0",
     "clsx": "^2.1.1",
     "flatpickr": "^4.6.13",
+    "jsonwebtoken": "^9.0.3",
+    "quickwinston": "^3.19.3",
     "react": "^19.0.0",
     "react-apexcharts": "^1.7.0",
     "react-dnd": "^16.0.1",
