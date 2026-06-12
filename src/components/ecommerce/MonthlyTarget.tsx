@@ -13,17 +13,19 @@ export default function MonthlyTarget() {
       fontFamily: "Outfit, sans-serif",
       type: "radialBar",
       height: 330,
-      sparkline: { enabled: true },
+      sparkline: {  
+        enabled: true },
     },
     plotOptions: {
       radialBar: {
         startAngle: -85,
         endAngle: 85,
-        hollow: { size: "80%" },
+        hollow: 
+        { size: "80%" },
         track: {
           background: "#E4E7EC",
           strokeWidth: "100%",
-          margin: 5,
+          margin: 5, //margin  is as a pixel
         },
         dataLabels: {
           name: { show: false },
@@ -32,7 +34,8 @@ export default function MonthlyTarget() {
             fontWeight: "600",
             offsetY: -40,
             color: "#1D2939",
-            formatter: (val) => val + "%",
+            formatter: 
+                 (val) => val + "%",
           },
         },
       },
@@ -72,7 +75,7 @@ export default function MonthlyTarget() {
             <button className="dropdown-toggle" onClick={toggleDropdown}>
               <MoreDotIcon className="text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 size-6" />
             </button>
-            <Dropdown isOpen={isOpen} onClose={closeDropdown} className="w-40 p-2">
+            <Dropdown  isOpen={isOpen}  onClose={closeDropdown} className="w-40 p-2">
               <DropdownItem
                 onItemClick={closeDropdown}
                 className="flex w-full font-normal text-left text-gray-500 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:text-gray-400 dark:hover:bg-white/5 dark:hover:text-gray-300"
@@ -97,7 +100,8 @@ export default function MonthlyTarget() {
           </span>
         </div>
         <p className="mx-auto mt-10 w-full max-w-[380px] text-center text-sm text-gray-500 sm:text-base">
-          You earn $3287 today, it's higher than last month. Keep up your good work!
+          You earn $3287 today, it's higher than last month. Keep up your 
+          good work!
         </p>
       </div>
 
